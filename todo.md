@@ -1,0 +1,3 @@
+- [ ] fixar o footer da sidebar sem fazer gambiarra
+- [ ] reescrever os textos
+- [ ] fazer a parte dos projetos com um preview do github
