@@ -1,92 +1,106 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-
-* {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+@font-face {
+    font-family: "Libre Franklin";
+    src: url(/fonts/static/LibreFranklin-Regular.ttf);
 }
 
-body {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+#wrapper {
+    padding-left: 23.4em;
+    font-family: "Libre Franklin";
+    font-size: 120%;
+}
+
+#sidebar {
+    font-family: "Libre Franklin";
+    padding: 2.5em 2.5em 0.5em 2.5em ;
+    background: #2079C7;
+    cursor: default;
+    height: 100vh;
+    width: 15em;
+    left: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    text-align: center;
+}
+
+#sidebar nav > ul {
+
+    text-align: right;
+    vertical-align: middle;
+    color: white;
+    font-size: 180%;
+    list-style: none;
+    padding-top: 70%;
+}
+
+#sidebar nav > ul > li{
+    padding-bottom: 2%;
+}
+
+.footer{
+    padding-top: 210%;
+}
+
+a:link, a:visited {
+    color : rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+}
+
+#resumo, #projetos {
+    padding-top: 2.5em;
+    margin-bottom: 30%;
+    margin-right: 30%;
+    text-align: justify;
+}
+
+#curriculo {
+    margin-right: 30%;
+    text-align: center;
+}
+
+h1, h2, h3{
+    text-align: center;
 }
 
 .foto {
-  border-radius: 50%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  width: 28%;
-  height: auto;
+    border-radius: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.main_info {
-  margin-bottom: 2%;
-  margin-top: 1%;
-  display: flex;
-  justify-content: center;
-  text-align: justify;
-  width: 35%;
-  height: auto;
+.icon{
+    width: 2.5%;
+    height: auto;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-.contato {
-  text-align: center;
-  margin-bottom: 1%;
+#projeto {
+    padding-bottom: 10%;
 }
 
-/* os botões abaixo não são de minha autoria*/
-
-.wrapper .button {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover {
-  width: 200px;
-}
-.wrapper .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1):hover .icon {
-  background: #4267b2;
-}
-.wrapper .button:nth-child(2):hover .icon {
-  background: #012033;
+.exemplo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+    box-shadow: .6em .6em 2em black;
 }
 
-.wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i {
-  color: #fff;
-}
-.wrapper .button span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:nth-child(1) span {
-  color: #4267b2;
-}
-.wrapper .button:nth-child(2) span {
-  color: #012033;
+#centralizar_icons{
+    text-align: center;
+    filter:drop-shadow(.1em .1em .1em);
 }

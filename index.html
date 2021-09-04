@@ -1,38 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Vinícius Hansen</title>
-        <style> @import url(style.css); </style>
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Vinícius Hansen</title>
+    <style>
+        @import url(style.css);
+    </style>
+    <script type="text/javascript" src="functions.js"></script>
+</head>
 
-    <body>
-        <img class="foto" src="Profile_img.png">
-        <div class="name">
-            <h1>Vinícius Hansen</h1>
-        </div>   
-        <div class="main_info">
-            <h3>* Olá, meu nome é Vinícius, atualmente estou cursando Sistemas de Informação no 
-                Instituto Federal Catarinense durante o período da manhã. <br>
-                * Estou procurando um estágio para adquirir experiência na área e poder ser mais independente. <br>
-                * Tenho interesse em programação, sistemas operacionais, redes e banco de dados. <br>
-                * Conhecimentos sobre Python, SQL, Git, Linux, Bash, HTML5, CSS3 e JavaScript. <br> </h3>
+<body>
+    <section id="sidebar">
+        <div class="inner">
+            <nav>
+                <ul>
+                    <li><a href="#resumo">Resumo</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#curriculo">Currículo</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="contato">
-            <h1>Contato</h1>
-            <h3>vinicius.carlo.hansen@gmail.com</h3>
-        </div> 
-        <div class="wrapper">
-            <div class="button">
-                <div class="icon"><i class="fab fa-linkedin"></i></div>
-                    <span> <a href="https://www.linkedin.com/in/viniciushansen/"> LinkedIn </a></span>
-                </div>
-            <div class="button">
-                <div class="icon"><i class="fab fa-github"></i></div>
-                    <span> <a href="https://github.com/ViniciusHansen">GitHub</a></span>
-                </div> <br><br><br><br>
+
+        <div class="footer">
+            <a href="mailto:vinicius.carlo.hansen@gmail.com">
+                <img alt="Email" height="30" width="40" src="/icons/mail.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/viniciushansen/" target="blank">
+                <img alt="LinkedIn" height="30" width="40" src="/icons/linkedin-plain.svg">
+            </a>
+            <a href="https://github.com/ViniciusHansen" target="blank">
+                <img alt="GitHub" height="30" width="40" src="/icons/github-original.svg">
+            </a>
         </div>
-    </body>
+    </section>
+
+    <div id="wrapper">
+
+        <section id="resumo" class="resumo">
+            <img class="foto" src="/images/Profile_img.png"><br>
+            <h1>Sobre Mim</h1>
+            Entusiasmado com tecnologia desde criança, interessado em programação, infraestrutura e software open
+            source, no momento estou cursando Sistemas de Informação no IFC - Araquari e procurando um estágio para
+            aprender mais sobre a área de T.I.
+            <h1>Conhecimentos</h1>
+            Hardware de Computadores, Lógica de Programação, Sistemas Operacionas, Versionamento de Código, Pacotes de
+            Escritório, Edição de Imagens, vídeos e aúdios.
+            Tenho interesse em redes e banco de dados.
+            <h1>Experiência</h1>
+            Cursei um semestre de Sistemas de Informação no Instituto Federal Catarinense, onde fui o representante da
+            turma e aprendi sobre programação com Python, Sistemas operacionais e Relações Interpessoais.
+        </section>
+
+        <section id="projetos" class="projetos">
+            <h1>Projetos</h1>
+
+            <div id="projeto">
+                <h3>Portfolio (este site)</h3>
+                <div id="centralizar_icons">
+                    <img src="/icons/html5-original.svg" class="icon">
+                    <img src="/icons/css3-original.svg" class="icon">
+                </div><br>
+
+                <a href="https://github.com/ViniciusHansen/viniciushansen.github.io" target="blank">
+                    <img src="/images/portfolio.png" class="exemplo">
+                </a>
+            </div>
+
+            <div id="projeto">
+                <h3>Script para acompanhar lançamentos de mangas</h3>
+                <div id="centralizar_icons">
+                    <img src="/icons/python-original.svg" class="icon">
+                </div><br>
+
+                <a href="https://github.com/ViniciusHansen/Manga-Releases-Tracker" target="blank">
+                    <img src="/images/tracker.png" class="exemplo">
+                </a>
+            </div>
+
+        </section>
+
+
+        <section id="curriculo" class="curriculo">
+            <h1>Currículo: </h1>
+            <iframe src="/CV_Vinícius Hansen.pdf" width="70%" height="970px"></iframe>
+        </section>
+
+
+    </div>
+</body>
+
 </html>
