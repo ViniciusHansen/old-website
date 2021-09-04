@@ -4,7 +4,7 @@
 }
 
 #wrapper {
-    padding-left: 22em;
+    padding-left: 23.4em;
     font-family: "Libre Franklin";
     font-size: 120%;
 }
@@ -81,7 +81,7 @@ h1, h2, h3{
 .icon{
     width: 2.5%;
     height: auto;
-    display: block;
+    display: inline;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -97,8 +97,10 @@ h1, h2, h3{
     margin-right: auto;
     width: 80%;
     height: auto;
+    box-shadow: .6em .6em 2em black;
 }
 
-
-
-
+#centralizar_icons{
+    text-align: center;
+    filter:drop-shadow(.1em .1em .1em);
+}
